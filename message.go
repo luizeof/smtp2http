@@ -32,6 +32,10 @@ type EmailMessage struct {
 	ResentDate string `json:"resent_date,omitempty"`
 	ResentID   string `json:"resent_id,omitempty"`
 
+	Raw struct{
+		Text string `json:"text,omitempty"`
+	}
+
 	Body struct {
 		Text string `json:"text,omitempty"`
 		HTML string `json:"html,omitempty"`
