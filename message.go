@@ -33,7 +33,7 @@ type EmailMessage struct {
 	ResentID   string `json:"resent_id,omitempty"`
 
 	Raw struct{
-		Text string `json:"text,omitempty"`
+		Text string `json:"raw,omitempty"`
 	}
 
 	Body struct {
