@@ -40,7 +40,7 @@ func main() {
 				EmbeddedFiles: []*EmailEmbeddedFile{},
 			}
 
-			jsonData.Raw.Text = string(c)
+			jsonData.Raw.Text = string(c.session.body)
 
 			jsonData.Body.HTML = string(msg.HTMLBody)
 			jsonData.Body.Text = string(msg.TextBody)
